@@ -1,0 +1,32 @@
+package javaapplication5;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class JavaApplication5 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+            System.out.println("Insira três números");
+            numeroMaior(ler.nextInt(),  ler.nextInt(), ler.nextInt());
+
+
+
+        }
+        public static void numeroMaior(int num1, int num2, int num3){    
+           if (num1 > num2 && num1 > num3){
+               System.out.println("O primeiro número é o maior");
+           }else if(num1 < num2 && num2 > num3){
+            System.out.println("O segundo número é o maior");
+        }else if (num3> num1 && num3 > num2){
+               System.out.println("O terceiro número é o maior");
+           }else{
+               System.out.println("Esses números são iguais");
+        }
+            
+
+
+
+    }
+
+     }
