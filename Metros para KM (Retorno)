@@ -1,0 +1,22 @@
+package javaapplication6;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class JavaApplication6 {
+
+    public static void main(String[] args) {
+      Scanner ler = new Scanner(System.in);
+      DecimalFormat decimal = new DecimalFormat("0.00");
+       double metros; 
+       System.out.println("Insira o valor em metros para converter para KM:");
+       metros = ler.nextDouble();
+        System.out.println("Seu valor convertido é de " + decimal.format(conversorKM(metros) + " KM"));
+    }
+    public static double conversorKM(double converterMetros){
+        double km;
+        km = converterMetros / 1000;
+        return km;
+        
+    }
+}
